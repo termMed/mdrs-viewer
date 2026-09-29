@@ -1,0 +1,226 @@
+{
+ "items": [
+  {
+   "memberId": "e72aeeef-4cad-5e3a-b935-ada6fc3e5c9e",
+   "effectiveTime": "20250630",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "900000000000207008",
+   "additionalFields": {
+    "sourceEffectiveTime": "20250630",
+    "targetEffectiveTime": "20250601"
+   }
+  },
+  {
+   "memberId": "a232e5eb-9e35-5bc3-9867-9f9ced366676",
+   "effectiveTime": "20250630",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "900000000000012004",
+   "additionalFields": {
+    "sourceEffectiveTime": "20250630",
+    "targetEffectiveTime": "20250601"
+   }
+  },
+  {
+   "memberId": "e72aeeef-4cad-5e3a-b935-ada6fc3e5c9e",
+   "effectiveTime": "20251231",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "900000000000207008",
+   "additionalFields": {
+    "sourceEffectiveTime": "20251231",
+    "targetEffectiveTime": "20251201"
+   }
+  },
+  {
+   "memberId": "a232e5eb-9e35-5bc3-9867-9f9ced366676",
+   "effectiveTime": "20251231",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "900000000000012004",
+   "additionalFields": {
+    "sourceEffectiveTime": "20251231",
+    "targetEffectiveTime": "20251201"
+   }
+  },
+  {
+   "memberId": "e72aeeef-4cad-5e3a-b935-ada6fc3e5c9e",
+   "effectiveTime": "20260630",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "900000000000207008",
+   "additionalFields": {
+    "sourceEffectiveTime": "20260630",
+    "targetEffectiveTime": "20260601"
+   }
+  },
+  {
+   "memberId": "a232e5eb-9e35-5bc3-9867-9f9ced366676",
+   "effectiveTime": "20260630",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "900000000000012004",
+   "additionalFields": {
+    "sourceEffectiveTime": "20260630",
+    "targetEffectiveTime": "20260601"
+   }
+  },
+  {
+   "memberId": "5c1ab22e-e21e-5757-b1fa-53f27c091136",
+   "effectiveTime": "20260630",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "61000999104",
+   "additionalFields": {
+    "sourceEffectiveTime": "20260630",
+    "targetEffectiveTime": "20260630"
+   },
+   "referencedComponent": {
+    "id": "61000999104",
+    "pt": {
+     "term": "Demo country C module"
+    }
+   }
+  },
+  {
+   "memberId": "639b8c24-3d21-56aa-9cf7-2943864d16c5",
+   "effectiveTime": "20260630",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "71000999109",
+   "additionalFields": {
+    "sourceEffectiveTime": "20260630",
+    "targetEffectiveTime": "20260630"
+   },
+   "referencedComponent": {
+    "id": "71000999109",
+    "pt": {
+     "term": "Demo country C reference set module"
+    }
+   }
+  },
+  {
+   "memberId": "6dbca9dc-2b24-58e7-adc4-c9083ebfd426",
+   "effectiveTime": "20260630",
+   "active": true,
+   "released": true,
+   "moduleId": "71000999109",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "61000999104",
+   "additionalFields": {
+    "sourceEffectiveTime": "20260630",
+    "targetEffectiveTime": "20260630"
+   },
+   "referencedComponent": {
+    "id": "61000999104",
+    "pt": {
+     "term": "Demo country C module"
+    }
+   }
+  },
+  {
+   "memberId": "c41ae903-6d78-5ef2-93e7-57830f8b0a40",
+   "effectiveTime": "20260630",
+   "active": true,
+   "released": true,
+   "moduleId": "71000999109",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "900000000000207008",
+   "additionalFields": {
+    "sourceEffectiveTime": "20260630",
+    "targetEffectiveTime": "20260601"
+   }
+  },
+  {
+   "memberId": "dce9490c-7ab5-508b-b1c0-efb3b31075f8",
+   "effectiveTime": "20251231",
+   "active": true,
+   "released": true,
+   "moduleId": "71000999109",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "61000999104",
+   "additionalFields": {
+    "sourceEffectiveTime": "20251231",
+    "targetEffectiveTime": "20260630"
+   },
+   "referencedComponent": {
+    "id": "61000999104",
+    "pt": {
+     "term": "Demo country C module"
+    }
+   }
+  },
+  {
+   "memberId": "170998b2-97bc-568e-86d5-19568bd17e8d",
+   "effectiveTime": "20251231",
+   "active": true,
+   "released": true,
+   "moduleId": "71000999109",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "900000000000207008",
+   "additionalFields": {
+    "sourceEffectiveTime": "20251231",
+    "targetEffectiveTime": "20251115"
+   }
+  },
+  {
+   "memberId": "874a52b9-f655-5afb-bbe5-20c8a4d7a7ea",
+   "effectiveTime": "20251231",
+   "active": true,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "21000999105",
+   "additionalFields": {
+    "sourceEffectiveTime": "20250630",
+    "targetEffectiveTime": "20250430"
+   }
+  },
+  {
+   "memberId": "874a52b9-f655-5afb-bbe5-20c8a4d7a7ea",
+   "effectiveTime": "20260630",
+   "active": false,
+   "released": true,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "21000999105",
+   "additionalFields": {
+    "sourceEffectiveTime": "20250630",
+    "targetEffectiveTime": "20250430"
+   }
+  },
+  {
+   "memberId": "2a7c214b-bcd2-5104-b96d-04439739800c",
+   "effectiveTime": "20260630",
+   "active": true,
+   "released": false,
+   "moduleId": "61000999104",
+   "refsetId": "900000000000534007",
+   "referencedComponentId": "449080006",
+   "additionalFields": {
+    "sourceEffectiveTime": "20260630",
+    "targetEffectiveTime": "20260101"
+   }
+  }
+ ],
+ "total": 15,
+ "limit": 100,
+ "offset": 0
+}
