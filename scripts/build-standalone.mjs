@@ -19,7 +19,7 @@ await build({
   logLevel: "warning",
 });
 const css = readFileSync("node_modules/@xyflow/react/dist/style.css", "utf8") + "\n" + readFileSync("src/app/globals.css", "utf8");
-const html = `<title>MDRS Explorer</title>
+const html = `<title>MDRS Viewer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">

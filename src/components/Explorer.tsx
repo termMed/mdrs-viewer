@@ -175,8 +175,13 @@ export default function Explorer() {
     >
       <header className="topbar">
         <div className="brand">
-          <h1>MDRS Explorer</h1>
-          <small>module versions, not modules</small>
+          <h1>MDRS Viewer</h1>
+          <small>
+            module versions, not modules · by{" "}
+            <a href="https://www.termmed.com" target="_blank" rel="noopener noreferrer">
+              termMed Labs
+            </a>
+          </small>
         </div>
         <div className="spacer" />
         <label className="field" htmlFor="policy">

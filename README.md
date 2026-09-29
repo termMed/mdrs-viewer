@@ -1,4 +1,4 @@
-# MDRS Explorer
+# MDRS Viewer
 
 A browser tool for reading SNOMED CT **Module Dependency Reference Sets** (MDRS, refset `900000000000534007`) as what they describe: dependencies between **versioned modules**.
 
@@ -8,7 +8,7 @@ Each MDRS row says
 moduleId @ sourceEffectiveTime  ──requires──▶  referencedComponentId @ targetEffectiveTime
 ```
 
-The referenced component is a module *version*, not just a module. MDRS Explorer builds a version-level graph from the rows and draws it as a swimlane timeline: one lane per module, one box per module version, and arrows from each dependent version to the exact version it requires. It reads RF2 Full, Snapshot and Delta files and Snowstorm `members` JSON, and it runs the same validation over each of them. As a result, practices that look identical in a module-level diagram can be compared, for example reusing a member id per dependency versus creating a new member per version, or a latest-only versus a cumulative Snapshot.
+The referenced component is a module *version*, not just a module. MDRS Viewer builds a version-level graph from the rows and draws it as a swimlane timeline: one lane per module, one box per module version, and arrows from each dependent version to the exact version it requires. It reads RF2 Full, Snapshot and Delta files and Snowstorm `members` JSON, and it runs the same validation over each of them. As a result, practices that look identical in a module-level diagram can be compared, for example reusing a member id per dependency versus creating a new member per version, or a latest-only versus a cumulative Snapshot.
 
 Everything runs in the browser. Files you load never leave your machine.
 
@@ -137,3 +137,17 @@ Stack: Next.js 16, React 19, [@xyflow/react](https://reactflow.dev), [elkjs](htt
 ## Contributing
 
 Issues and pull requests are welcome, especially new checks and real-world MDRS patterns (please anonymise or synthesise the data).
+
+## AI-Assisted Development Disclosure
+
+In the spirit of transparency and the open sharing of our research, we declare that parts of this codebase were developed, optimized, or refactored with the assistance of artificial intelligence tools (such as Anthropic Claude).
+
+## License
+
+Copyright 2026 termMed SAS ([www.termmed.com](https://www.termmed.com)).
+
+Licensed under the [Apache License, Version 2.0](LICENSE). If you redistribute this software or build on it, Section 4(d) of the license requires you to include the [NOTICE](NOTICE) file, including its attribution to termMed SAS.
+
+For custom licensing, co-branding or white-labeling, contact [termmed-labs@termmed.com](mailto:termmed-labs@termmed.com).
+
+SNOMED CT is a registered trademark of SNOMED International. This repository contains no SNOMED CT release content.

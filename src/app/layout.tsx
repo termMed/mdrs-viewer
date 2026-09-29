@@ -3,7 +3,7 @@ import "@xyflow/react/dist/style.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MDRS Explorer",
+  title: "MDRS Viewer",
   description: "Version-level viewer and validator for SNOMED CT Module Dependency Reference Sets (Full, Snapshot, Snowstorm JSON).",
 };
 

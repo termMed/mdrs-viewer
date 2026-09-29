@@ -1,0 +1,28 @@
+=========================================================================
+==  NOTICE file corresponding to Section 4(d) of the Apache License,   ==
+==  Version 2.0, in this case for the MDRS Viewer distribution.        ==
+=========================================================================
+
+SNOMED CT Module Dependency Reference Set (MDRS) Viewer
+Copyright 2026 termMed SAS (https://www.termmed.com)
+
+This product includes software developed by termMed Labs, the research
+division of termMed SAS.
+
+Attribution & Branding Notice:
+------------------------------
+This software was originally created and researched by the termMed Labs
+team as a contribution to the community.
+
+If you redistribute this software, modify it, or use it as a foundation for
+a commercial product or service, you are required to preserve this notice
+and maintain prominent, non-invasive attribution to termMed SAS
+(www.termmed.com) in the user-facing documentation, repository, or product
+interfaces.
+
+For inquiries regarding custom licensing, co-branding, or white-labeling,
+please contact: termmed-labs@termmed.com
+
+SNOMED CT is a registered trademark of SNOMED International. This software
+does not include SNOMED CT content; the demo data shipped with it is
+synthetic, apart from International module identifiers.

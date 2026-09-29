@@ -186,3 +186,5 @@ table.grid tbody tr:hover td { background: var(--accent-soft); }
 .inspector .btn.small { text-align: left; justify-content: flex-start; flex-wrap: wrap; }
 .react-flow__minimap-mask { fill: var(--panel-2); fill-opacity: 0.75; }
 .react-flow__minimap svg { background: var(--panel); }
+.brand small a { color: var(--accent); text-decoration: none; }
+.brand small a:hover { text-decoration: underline; }
