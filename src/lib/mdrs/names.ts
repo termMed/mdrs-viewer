@@ -41,6 +41,13 @@ export const KNOWN_MODULES: Record<string, string> = {
   "32506021000036107": "SNOMED CT Australian extension",
   "351000168100": "Australian third party reference set module",
   "900062011000036108": "Australian Medicines Terminology module",
+  "999000041000000102": "UK Edition module",
+  "999000031000000106": "UK Edition reference set module",
+  "999000011000000103": "UK clinical extension module",
+  "999000021000000109": "UK clinical extension reference set module",
+  "999000011000001104": "UK drug extension module",
+  "999000021000001108": "UK drug extension reference set module",
+  "83821000000107": "UK composition module",
   // Synthetic demo modules (namespace 1000999) used by public/samples
   "21000999105": "Demo shared language edition module",
   "31000999103": "Demo country A module",
