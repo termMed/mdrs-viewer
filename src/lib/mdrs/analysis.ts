@@ -398,6 +398,26 @@ export function analyseRows(
       rowIds: unrel.flatMap((e) => e.rows.map((r) => r.id)),
     });
 
+  // repurposed members (json): first released at one date, now describing a later version
+  const rep = g.edges.filter((e) => e.flags.includes("repurposed"));
+  if (rep.length)
+    findings.push({
+      code: "REPURPOSED",
+      severity: "warning",
+      title: "Members first released for an earlier version now describe a later one",
+      detail:
+        rep
+          .slice(0, 8)
+          .map((e) => {
+            const r = e.rows.find((x) => x.releasedEffectiveTime)!;
+            return `${nm(e.sourceModule)}@${fmtDate(e.sourceEt)} uses member ${r.id.slice(0, 8)} first released ${fmtDate(r.releasedEffectiveTime!)}`;
+          })
+          .join("; ") +
+        (rep.length > 8 ? ` … (+${rep.length - 8})` : "") +
+        ". The state the member had at its first release is no longer in the Snapshot; only the Full keeps it.",
+      rowIds: rep.flatMap((e) => e.rows.map((r) => r.id)),
+    });
+
   // closure-based findings, evaluated on the latest version of each leaf module (what an implementer installs)
   const latestLeaf = ownModules
     .map((m) => cByNode.get(nodeKey(m, modules.get(m)!.versions.at(-1)!)))

@@ -65,6 +65,7 @@ export type EdgeFlag =
   | "duplicate-assertion"
   | "ambiguous-target"
   | "unreleased"
+  | "repurposed"
   | "redundant"
   | "conflict";
 

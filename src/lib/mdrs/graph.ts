@@ -102,6 +102,8 @@ export function buildGraph(rows: MdrsRow[], registry: Registry): VersionGraph {
     if (grp.some((r) => r.active && r.effectiveTime && r.effectiveTime !== r.sourceEffectiveTime)) flags.push("et-mismatch");
     if (new Set(grp.filter((r) => r.active).map((r) => r.id)).size > 1) flags.push("duplicate-assertion");
     if (grp.some((r) => r.released === false)) flags.push("unreleased");
+    // Snowstorm JSON: the member was first released at releasedEffectiveTime but now carries a later state
+    if (grp.some((r) => r.released && r.releasedEffectiveTime && r.effectiveTime && r.releasedEffectiveTime < r.effectiveTime)) flags.push("repurposed");
     edges.push({
       key: k,
       from: s.key,

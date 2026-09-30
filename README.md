@@ -85,6 +85,7 @@ The **closure policy** selector in the top bar switches between *direct only* (t
 | `DUPLICATE` | warning | The same version dependency is asserted by several member ids |
 | `NOT-SELF-CONTAINED` | warning | The chain of the latest release cannot be followed inside the file because upstream rows are not included |
 | `UNRELEASED` | warning | Snowstorm member with `released=false` |
+| `REPURPOSED` | warning | Snowstorm member first released for an earlier version now carries a later one (its earlier state is gone from the Snapshot) |
 | `ID-REUSE` · `ID-PER-VERSION` · `ID-MIXED` | info / warning | Member id strategy per source module |
 | `SNAP-LATEST` · `SNAP-CUMULATIVE` | info | Whether the Snapshot keeps only the latest version or the history |
 | `IMPLICIT` | info (warning under *explicit closure*) | A dependency is only implied transitively |
