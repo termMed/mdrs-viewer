@@ -30,7 +30,8 @@ const VIEW_LABEL: Record<ViewMode, string> = {
   derived: "Snapshot as of…",
 };
 
-const DEFAULT_PKG = "DEMOB_20260531";
+// Package selected on first load; override at build time with NEXT_PUBLIC_DEFAULT_PKG.
+const DEFAULT_PKG = process.env.NEXT_PUBLIC_DEFAULT_PKG || "DEMOB_20260531";
 
 export default function Explorer() {
   const [packages, setPackages] = useState<Package[]>([]);

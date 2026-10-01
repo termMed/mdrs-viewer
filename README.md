@@ -152,3 +152,10 @@ Licensed under the [Apache License, Version 2.0](LICENSE). If you redistribute t
 For custom licensing, co-branding or white-labeling, contact [termmed-labs@termmed.com](mailto:termmed-labs@termmed.com).
 
 SNOMED CT is a registered trademark of SNOMED International. This repository contains no SNOMED CT release content.
+
+## Deployment
+
+termMed hosts a review instance at https://mdrs.termspace.com (login required). The
+`deploy/` folder has the scripts that provision an Ubuntu droplet (Node 22, systemd,
+nginx with basic auth, Let's Encrypt) and publish a new build; see
+[deploy/README.md](deploy/README.md).
