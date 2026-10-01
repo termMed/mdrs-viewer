@@ -159,3 +159,7 @@ termMed hosts a review instance at https://mdrs.termspace.com (login required). 
 `deploy/` folder has the scripts that provision an Ubuntu droplet (Node 22, systemd,
 nginx with basic auth, Let's Encrypt) and publish a new build; see
 [deploy/README.md](deploy/README.md).
+
+An offline copy (`index.html` + `app.js` with the sample files built in, no server
+needed) is attached to each [release](https://github.com/termMed/mdrs-viewer/releases).
+Build it with `SAMPLES_DIR=<folder> DEFAULT_PKG=<key> npm run build:standalone`.

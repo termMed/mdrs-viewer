@@ -56,12 +56,19 @@ export default function Explorer() {
     setLoading(true);
     setLoadError("");
     try {
-      const list: string[] = await (await fetch("samples/manifest.json")).json();
+      // The standalone build inlines the sample files (so the page also works from
+      // file://); otherwise they are fetched from public/samples.
+      const inline = (globalThis as { __MDRS_SAMPLES__?: Record<string, string> }).__MDRS_SAMPLES__;
+      const list: string[] = inline
+        ? Object.keys(inline)
+        : await (await fetch("samples/manifest.json")).json();
       const files = await Promise.all(
-        list.map(async (n) => {
-          const t = await (await fetch(`samples/${encodeURIComponent(n)}`)).text();
-          return parseAny(t, n);
-        }),
+        list
+          .filter((n) => n !== "manifest.json")
+          .map(async (n) => {
+            const t = inline ? inline[n] : await (await fetch(`samples/${encodeURIComponent(n)}`)).text();
+            return parseAny(t, n);
+          }),
       );
       const pk = groupIntoPackages(files);
       setPackages(pk);
